@@ -1,0 +1,14 @@
+# 忽略图片输出
+*.jpg
+*.jpeg
+*.png
+
+# Python 缓存文件
+__pycache__/
+*.pyc
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# VSCode 配置
+.vscode/
