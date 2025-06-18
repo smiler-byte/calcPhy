@@ -126,7 +126,7 @@ ax1.add_patch(rect)
 ax1.set_aspect('equal')
 ax1.set_title('vertical defect')
 fig1.colorbar(cs1, ax=ax1)
-fig1.savefig('vertical_defect.png')
+fig1.savefig('../result/vertical_defect.png')
 plt.close(fig1)
 
 # 2. horizontal defect
@@ -137,19 +137,19 @@ ax2.add_patch(rect2)
 ax2.set_aspect('equal')
 ax2.set_title('horizontal defect')
 fig2.colorbar(cs2, ax=ax2)
-fig2.savefig('horizontal_defect.png')
+fig2.savefig('../result/horizontal_defect.png')
 plt.close(fig2)
 
 # 3. bottom temperature gradient 2
 fig3, ax3 = plt.subplots()
 ax3.plot(x_1, q_1)
 ax3.set_title('vertical bottom temperature gradient')
-fig3.savefig('vertical_bottom_temperature_gradient.png')
+fig3.savefig('../result/vertical_bottom_temperature_gradient.png')
 plt.close(fig3)
 
 # 4. bottom temperature gradient 3
 fig4, ax4 = plt.subplots()
 ax4.plot(x_1, q_2)
 ax4.set_title('horizon bottom temperature gradient')
-fig4.savefig('horizon_bottom_temperature_gradient.png')
+fig4.savefig('../result/horizon_bottom_temperature_gradient.png')
 plt.close(fig4)
