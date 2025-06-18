@@ -116,8 +116,10 @@ print(np.trapezoid(q_2, x_1))
 
 # 可视化并保存单独的图像文件
 
+figsize=(12,12)
+
 # 1. vertical defect
-fig1, ax1 = plt.subplots(figsize=(6,6))
+fig1, ax1 = plt.subplots(figsize=figsize)
 cs1 = ax1.contourf(X, Y, T_1, 50, cmap='jet')
 rect = Rectangle((0.4, 0.5), 0.2, 0.5, linewidth=1, edgecolor='white', facecolor='none')
 ax1.add_patch(rect)
@@ -128,7 +130,7 @@ fig1.savefig('vertical_defect.png')
 plt.close(fig1)
 
 # 2. horizontal defect
-fig2, ax2 = plt.subplots(figsize=(6,6))
+fig2, ax2 = plt.subplots(figsize=figsize)
 cs2 = ax2.contourf(X, Y, T_2, 50, cmap='jet')
 rect2 = Rectangle((0.5, 0.4), 0.5, 0.2, linewidth=1, edgecolor='white', facecolor='none')
 ax2.add_patch(rect2)
